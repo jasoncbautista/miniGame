@@ -10,8 +10,10 @@ window.requestAnimFrame = (function(){
 })();
 
 
+var xPos= 10;
 var render = function(){
-    
+    xPos += 5;
+    root.football.css("left", xPos + "px");
 };
 
 
