@@ -26,7 +26,10 @@ $(document).ready(function(){
     root.football = $("<img class='football' src='college_football.png'/>");
     $("body").append(root.football);
 
-
+    $(document).click(function(ee){
+        console.log(ee);
+        
+    });
     (function animloop(){
       root.requestAnimFrame(animloop);
       render();
