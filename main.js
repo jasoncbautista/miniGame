@@ -28,6 +28,8 @@ $(document).ready(function(){
 
     $(document).click(function(ee){
         console.log(ee);
+        xPox = 10;
+        render();
         
     });
     (function animloop(){
