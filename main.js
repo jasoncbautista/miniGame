@@ -11,9 +11,11 @@ window.requestAnimFrame = (function(){
 
 
 var xPos= 10;
+var yPos = 10;
 var render = function(){
     xPos += 5;
     root.football.css("left", xPos + "px");
+    root.football.css("top", yPos+ "px");
 };
 
 
@@ -26,9 +28,10 @@ $(document).ready(function(){
     root.football = $("<img class='football' src='college_football.png'/>");
     $("body").append(root.football);
 
-    $(document).click(function(ee){
+    $("body").click(function(ee){
         console.log(ee);
-        xPox = 10;
+        xPos = ee.pageX;
+        yPos = ee.pageY;
         render();
         
     });
