@@ -12,6 +12,11 @@ window.requestAnimFrame = (function(){
 
 var xPos= 10;
 var yPos = 10;
+
+var footballWidth = 50;
+var footballHeight = 20;
+
+
 var render = function(){
     xPos += 5;
     root.football.css("left", xPos + "px");
