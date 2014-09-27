@@ -19,8 +19,8 @@ var footballHeight = 20;
 
 var render = function(){
     xPos += 5;
-    root.football.css("left", xPos + "px");
-    root.football.css("top", yPos+ "px");
+    root.football.css("left", (xPos - footballWidth ) + "px");
+    root.football.css("top", (yPos - footballHeight/2)+ "px");
 };
 
 
